@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <title>Native Markdown Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.93.1" />
+  <meta name="description" content="Native Markdown Support - MarkdownSite Community Docs " />
+
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.css"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://docs.markdownsite.com/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#02007e;
+      --body-color:#f9f9f9;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Lato;
+    }
+  </style>
+
+  
+  
+  <link href="https://docs.markdownsite.com/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+   
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="Native Markdown Support" />
+  <meta
+    name="twitter:description"
+    content="Learn about MDS&#39;s support for rendering markdown files."
+  />
+    <meta property="og:title" content="Native Markdown Support" />
+<meta property="og:description" content="Learn about MDS&#39;s support for rendering markdown files." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.markdownsite.com/markdown/" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Native Markdown Support"/>
+<meta name="twitter:description" content="Learn about MDS&#39;s support for rendering markdown files."/>
+
+</head>
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      MarkdownSite Community Docs
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/">home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/contact">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://docs.markdownsite.com/">docs</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                         
+ 
+<li
+  data-nav-id="https://docs.markdownsite.com/markdown/"
+  title="Native Markdown Support"
+  class="sidelist
+  active"
+>
+  <a href="https://docs.markdownsite.com/markdown/">
+    Native Markdown Support
+  </a>
+   
+</li>
+          
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">Native Markdown Support</h2>
+          
+          <div class="content"><p>MarkdownSite supports rendering markdown files natively.</p>
+<h2 id="file-mapping">File Mapping</h2>
+<p>By default markdown files are scanned for in <code>site/</code>.</p>
+<p>This location can be overridden with the <code>site</code> key in the <a href="/mds-config/">YAML Config</a>.</p>
+<p>When the website is live, requests will map like this table.</p>
+<table>
+<thead>
+<tr>
+<th>HTTP Request</th>
+<th>File Paths Checked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>site/index.md</td>
+</tr>
+<tr>
+<td>/about</td>
+<td>site/about.md</td>
+</tr>
+<tr>
+<td>/about</td>
+<td>site/about/index.md</td>
+</tr>
+<tr>
+<td>/about.html</td>
+<td>site/about.md</td>
+</tr>
+<tr>
+<td>/about.htm</td>
+<td>site/about.md</td>
+</tr>
+</tbody>
+</table>
+<p>If one of the files is not found, then there will be a 404 error.</p>
+<h2 id="rendering-system">Rendering System</h2>
+<p>MarkdownSite uses <a href="https://github.com/symkat/MarkdownSite/tree/master/CGI">MarkdownSite::CGI</a> to turn Markdown files into HTML files.</p>
+<p>When a file is found, it is read with <a href="https://github.com/symkat/Markdown-Compiler">Markdown::Compiler</a>.  This creates <code>meta-data</code> from the header section, if available.  It turns the body of the markdown file into HTML.</p>
+<p>The meta data and HTML is then given to an <a href="https://metacpan.org/dist/Mojolicious/view/lib/Mojolicious/Guides/Rendering.pod#Embedded-Perl">EP Template</a> for rendering.  Once rendered, it is cached.</p>
+<p>The header of the markdown file can declare various keys that impact what MarkdownSite::CGI does.</p>
+<table>
+<thead>
+<tr>
+<th>System Key</th>
+<th>What It Does</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>theme</td>
+<td>Which theme to use</td>
+<td>default</td>
+</tr>
+<tr>
+<td>template</td>
+<td>Which template from that theme to use</td>
+<td>page</td>
+</tr>
+</tbody>
+</table>
+<p>The default theme supports the following keys:</p>
+<table>
+<thead>
+<tr>
+<th>Theme Key</th>
+<th>What It Does</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>HTML title for page</td>
+<td>none</td>
+</tr>
+<tr>
+<td>meta.author</td>
+<td>Value for meta field in header</td>
+<td>none</td>
+</tr>
+<tr>
+<td>meta.desc</td>
+<td>Value for meta field in header</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>A markdown file that made use of these and has a custom template may look like the following:</p>
+<pre tabindex="0"><code>---
+title: Sonnet 121
+meta.author: William Shakespeare
+template: sonnet
+---
+
+’Tis better to be vile than vile esteemed
+When not to be receives reproach of being,
+And the just pleasure lost, which is so deemed
+Not by our feeling but by others&#39; seeing.
+For why should others’ false adulterate eyes
+Give salutation to my sportive blood?
+Or on my frailties why are frailer spies,
+Which in their wills count bad that I think good?
+No, I am that I am; and they that level
+At my abuses reckon up their own:
+I may be straight though they themselves be bevel;
+By their rank thoughts my deeds must not be shown,
+    Unless this general evil they maintain:
+    All men are bad and in their badness reign.
+</code></pre><p>A markdown file can make use of none of these meta-data sections.</p>
+<pre tabindex="0"><code>Hello **World**!
+
+This is a perfectly fine file that is in
+[markdown](https://en.wikipedia.org/wiki/Markdown).
+</code></pre></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 29 Dec 2018
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                     
+                         
+                          
+                  
+                     
+                         
+                
+            <a
+              class="nav nav-prev"
+              href="https://docs.markdownsite.com/static-site/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Host A Static Site</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://docs.markdownsite.com/mds-config/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">YAML Config</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4"></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item">
+            <a
+              class="text-color d-inline-block p-2"
+              href="https://github.com/symkat/MarkdownSite"
+              aria-label="Github"
+              ><i class="ti-github"></i
+            ></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://docs.markdownsite.com/js/script.min.js"></script>
+
+  </body>
+</html>

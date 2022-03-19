@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <title>YAML Config</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.93.1" />
+  <meta name="description" content="YAML Config - MarkdownSite Community Docs " />
+
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.css"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://docs.markdownsite.com/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#02007e;
+      --body-color:#f9f9f9;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Lato;
+    }
+  </style>
+
+  
+  
+  <link href="https://docs.markdownsite.com/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+   
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="YAML Config" />
+  <meta
+    name="twitter:description"
+    content="Like most things, MarkdownSite can be customized with the use of a special YAML file.  Learn about all of the configuration options here."
+  />
+    <meta property="og:title" content="YAML Config" />
+<meta property="og:description" content="Like most things, MarkdownSite can be customized with the use of a special YAML file.  Learn about all of the configuration options here." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.markdownsite.com/mds-config/" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="YAML Config"/>
+<meta name="twitter:description" content="Like most things, MarkdownSite can be customized with the use of a special YAML file.  Learn about all of the configuration options here."/>
+
+</head>
+
+
+  <body>
+    
+    
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      MarkdownSite Community Docs
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/">home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/contact">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://docs.markdownsite.com/">docs</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a
+            class="back-btn"
+            href="/"
+            aria-label="back"
+          ></a>
+          <ul class="list-styled">
+                           
+ 
+<li
+  data-nav-id="https://docs.markdownsite.com/mds-config/"
+  title="YAML Config"
+  class="sidelist
+  active"
+>
+  <a href="https://docs.markdownsite.com/mds-config/">
+    YAML Config
+  </a>
+   
+</li>
+        
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white" id="content">
+          <h2 class="mb-5" id="title">YAML Config</h2>
+          
+          <div class="content"><p>MarkdownSite can be configured with a <code>.markdownsite.yml</code> file in the root of the domain.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>What it does</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>webroot</td>
+<td>Change the directory for static files.</td>
+<td>public/</td>
+</tr>
+<tr>
+<td>site</td>
+<td>Change the directory for markdown files.</td>
+<td>site/</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>Change the branch to build the site from</td>
+<td>master</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>Set the domain to use</td>
+<td>*<strong>none</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="webroot">Webroot</h4>
+<p>The default webroot is <code>public/</code>.  Files in that directory will be available from your website.</p>
+<p>Adding this key will change the directory that is used for static files to include in your website.</p>
+<h4 id="site">Site</h4>
+<p>The default directory to scan for markdown files is <code>site/</code>.  Files in that directory will be converted to HTML and served to the website requesters.</p>
+<p>Adding this key will change the directory that is used for finding markdown files to include in your website.</p>
+<h4 id="branch">Branch</h4>
+<p>If a specific branch should be checked out after the <code>git clone</code>, use this key to specify the branch.</p>
+<h4 id="domain">Domain</h4>
+<p>To change the domain to a custom domain, use this key.  Note that using this key without having the feature enabled will result in the build failing.</p>
+<hr />
+<p>A configuration file that brings some of these features together might look like this:</p>
+<pre tabindex="0"><code>---
+webroot: static
+site:    pages
+domain: myproject.markdownsite.net
+</code></pre></div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">
+            Updated on 29 Dec 2018
+          </p>
+          <nav class="pagination mt-3">
+            
+                      
+                     
+                     
+                         
+                         
+                          
+                  
+                     
+                
+            <a
+              class="nav nav-prev"
+              href="https://docs.markdownsite.com/markdown/"
+              aria-label="Previous page"
+              ><i class="ti-arrow-left mr-2"></i>
+              <span class="d-none d-md-block">Native Markdown Support</span></a
+            >
+             
+            <a
+              class="nav nav-next"
+              href="https://docs.markdownsite.com/open-source/"
+              aria-label="Previous page"
+            >
+              <span class="d-none d-md-block">Open Source</span
+              ><i class="ti-arrow-right ml-2"></i
+            ></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4"></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item">
+            <a
+              class="text-color d-inline-block p-2"
+              href="https://github.com/symkat/MarkdownSite"
+              aria-label="Github"
+              ><i class="ti-github"></i
+            ></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://docs.markdownsite.com/js/script.min.js"></script>
+
+  </body>
+</html>

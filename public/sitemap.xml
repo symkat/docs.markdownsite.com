@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://docs.markdownsite.com/hugo/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.markdownsite.com/static-site/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.markdownsite.com/markdown/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.markdownsite.com/mds-config/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.markdownsite.com/open-source/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.markdownsite.com/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://docs.markdownsite.com/categories/</loc>
+  </url><url>
+    <loc>https://docs.markdownsite.com/tags/</loc>
+  </url>
+</urlset>

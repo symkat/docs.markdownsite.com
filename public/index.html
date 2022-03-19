@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <title>MarkdownSite Community Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.93.1" />
+  <meta name="description" content=" - MarkdownSite Community Docs " />
+
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.css"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.markdownsite.com/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://docs.markdownsite.com/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#02007e;
+      --body-color:#f9f9f9;
+      --text-color:#636363;
+      --text-color-dark:#242738;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Lato;
+    }
+  </style>
+
+  
+  
+  <link href="https://docs.markdownsite.com/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://docs.markdownsite.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+   
+  
+  
+
+  
+     
+  <meta name="twitter:title" content="" />
+  <meta
+    name="twitter:description"
+    content="This is meta description"
+  />
+    <meta property="og:title" content="" />
+<meta property="og:description" content="This is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.markdownsite.com/" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This is meta description"/>
+
+</head>
+
+
+  <body>
+     
+    
+    <header
+      class="banner overlay bg-cover"
+      data-background="https://docs.markdownsite.com/images/banner.jpg"
+    >
+      <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      MarkdownSite Community Docs
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/">home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://markdownsite.com/contact">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://docs.markdownsite.com/">docs</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+ 
+<div class="container section">
+  <div class="row">
+    <div class="col-lg-8 text-center mx-auto">
+      <h1 class="text-white mb-3">
+        Community Docs
+      </h1>
+      <p class="text-white mb-4">
+        Documents to get up to speed on hosting your website.
+      </p>
+      <div class="position-relative">
+        <input
+          id="search"
+          class="form-control"
+          placeholder="Have a question? Just ask here or enter terms"
+        />
+        <i class="ti-search search-icon"></i>
+        
+          
+        <script>
+          $(function() {
+          var projects = [
+          	
+          	{
+          		value: "Host Your Hugo Website",
+          		label: "<p>Hugo is a popular static website generator.\nMarkdownSite fully supports websites made with Hugo.\nMake sure that your website is fully built with hugo -D in the root of the git repository.\nThis will ensure that the public\/ directory has all of the files required to serve the website.\nCommit your repository to your git provider and then go to MarkdownSite.com and enter the git URL that is used to clone the repository.\nClick Build My Site and you will be brought to the status page for your MarkdownSite and it will be rebuilding.\nIf you use an ssh clone URL, MarkdownSite may need to be given access to your repository. You can find the public key here.\n</p>",
+          		url:"https:\/\/docs.markdownsite.com\/hugo\/"
+          	},
+          	
+          	{
+          		value: "Host A Static Site",
+          		label: "<p>MarkdownSite supports static websites. Ensure that the contents of your site are in the public\/ directory of the git repo.\nCommit your repository to your git provider and then go to MarkdownSite.com and enter the git URL that is used to clone the repository.\nClick Build My Site and you will be brought to the status page for your MarkdownSite and it will be rebuilding.\nIf you use an ssh clone URL, MarkdownSite may need to be given access to your repository. You can find the public key here.\n</p>",
+          		url:"https:\/\/docs.markdownsite.com\/static-site\/"
+          	},
+          	
+          	{
+          		value: "Native Markdown Support",
+          		label: "<p>MarkdownSite supports rendering markdown files natively.\nFile Mapping By default markdown files are scanned for in site\/.\nThis location can be overridden with the site key in the YAML Config.\nWhen the website is live, requests will map like this table.\n   HTTP Request File Paths Checked     \/ site\/index.md   \/about site\/about.md   \/about site\/about\/index.md   \/about.html site\/about.md   \/about.htm site\/about.md    If one of the files is not found, then there will be a 404 error.\nRendering System MarkdownSite uses MarkdownSite::CGI to turn Markdown files into HTML files.\nWhen a file is found, it is read with Markdown::Compiler. This creates meta-data from the header section, if available. It turns the body of the markdown file into HTML.\nThe meta data and HTML is then given to an EP Template for rendering. Once rendered, it is cached.\nThe header of the markdown file can declare various keys that impact what MarkdownSite::CGI does.\n   System Key What It Does Default Value     theme Which theme to use default   template Which template from that theme to use page    The default theme supports the following keys:\n   Theme Key What It Does Default Value     title HTML title for page none   meta.author Value for meta field in header none   meta.desc Value for meta field in header none    A markdown file that made use of these and has a custom template may look like the following:\n---\rtitle: Sonnet 121\rmeta.author: William Shakespeare\rtemplate: sonnet\r---\r’Tis better to be vile than vile esteemed\rWhen not to be receives reproach of being,\rAnd the just pleasure lost, which is so deemed\rNot by our feeling but by others\u0026#39; seeing.\rFor why should others’ false adulterate eyes\rGive salutation to my sportive blood?\rOr on my frailties why are frailer spies,\rWhich in their wills count bad that I think good?\rNo, I am that I am; and they that level\rAt my abuses reckon up their own:\rI may be straight though they themselves be bevel;\rBy their rank thoughts my deeds must not be shown,\rUnless this general evil they maintain:\rAll men are bad and in their badness reign. A markdown file can make use of none of these meta-data sections.\nHello **World**!\rThis is a perfectly fine file that is in\r[markdown](https:\/\/en.wikipedia.org\/wiki\/Markdown). </p>",
+          		url:"https:\/\/docs.markdownsite.com\/markdown\/"
+          	},
+          	
+          	{
+          		value: "YAML Config",
+          		label: "<p>MarkdownSite can be configured with a .markdownsite.yml file in the root of the domain.\n   Key What it does Default     webroot Change the directory for static files. public\/   site Change the directory for markdown files. site\/   branch Change the branch to build the site from master   domain Set the domain to use *none    Webroot The default webroot is public\/. Files in that directory will be available from your website.\nAdding this key will change the directory that is used for static files to include in your website.\nSite The default directory to scan for markdown files is site\/. Files in that directory will be converted to HTML and served to the website requesters.\nAdding this key will change the directory that is used for finding markdown files to include in your website.\nBranch If a specific branch should be checked out after the git clone, use this key to specify the branch.\nDomain To change the domain to a custom domain, use this key. Note that using this key without having the feature enabled will result in the build failing.\nA configuration file that brings some of these features together might look like this:\n---\rwebroot: static\rsite: pages\rdomain: myproject.markdownsite.net </p>",
+          		url:"https:\/\/docs.markdownsite.com\/mds-config\/"
+          	},
+          	
+          	{
+          		value: "Open Source",
+          		label: "<p>MarkdownSite is an open-source project. You can view \u0026amp; download the source from GitHub. There is documentation and setup systems to get an MDS network up and running, as well as for on-going configuration management of a running network. Additional graphs explain how the various systems interact.\nI invite you to setup your own network.\nOpen-Source - Motevation I have always had a deep affinity for this aspect of computer technology. To express my facination as simply as I can: That one can express an idea, as information, and store it in a computer. That another can have the information, retrieved from a computer. It does not have to be the same computer, and the computers never need to have directly been connected to one another.\nMarkdownSite is an idea I have about how a web hosting platform could be run. I hope that this information is helpful to those who are reading this, as so much in the open-source community has been helpful to me.\nOpen-Source - Money I would like to contribute to the open source community and make a living at the same time, and I believe that is possible.\nIf you like MarkdownSite and would like to see more of this type of work, please consider contributing on GitHub Sponsors.\n</p>",
+          		url:"https:\/\/docs.markdownsite.com\/open-source\/"
+          	},
+          	
+          	{
+          		value: "",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.markdownsite.com\/"
+          	},
+          	
+          	{
+          		value: "Categories",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.markdownsite.com\/categories\/"
+          	},
+          	
+          	{
+          		value: "Tags",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.markdownsite.com\/tags\/"
+          	},
+          	
+          ];
+          $( "#search" ).autocomplete({
+          	source: projects
+          })
+          .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+          	return $( "<li>" )
+          	.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
+          	.appendTo( ul );
+          };
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+    
+     
+
+  
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title">How to use MarkdownSite</h2>
+        </div>
+        
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.markdownsite.com/hugo/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+              
+                <img src="/hugo-logo-wide.svg" width="75%" style="margin-bottom: 1em" />
+              
+              <h3 class="mb-3 mt-0">Host Your Hugo Website</h3>
+              
+                <p class="mb-0">Find out how to get a Hugo website up and running on MarkdownSite quickly.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.markdownsite.com/static-site/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-folder icon text-primary d-block mb-4"></i>
+              
+              
+              <h3 class="mb-3 mt-0">Host A Static Site</h3>
+              
+                <p class="mb-0">MarkdownSite supports static websites.  Write HTML/CSS by hand, or explore <strong>JAM Stack</strong> tools to build a static website.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.markdownsite.com/markdown/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-smallcap icon text-primary d-block mb-4"></i>
+              
+              
+              <h3 class="mb-3 mt-0">Native Markdown Support</h3>
+              
+                <p class="mb-0">Learn about MDS&rsquo;s support for rendering markdown files.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.markdownsite.com/mds-config/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-settings icon text-primary d-block mb-4"></i>
+              
+              
+              <h3 class="mb-3 mt-0">YAML Config</h3>
+              
+                <p class="mb-0">Like most things, MarkdownSite can be customized with the use of a special YAML file.  Learn about all of the configuration options here.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.markdownsite.com/open-source/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-linux icon text-primary d-block mb-4"></i>
+              
+              
+              <h3 class="mb-3 mt-0">Open Source</h3>
+              
+                <p class="mb-0">MarkdownSite is open source.  You can run the hosting platform yourself if you so choose.  Learn why.</p>
+              
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  
+    
+      
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section px-3 bg-white shadow text-center">
+                <h2 class="mb-4">Didn&rsquo;t find an answer to your question?</h2>
+                <p class="mb-4">These documents are maintained on GitHub, please open an issue or pull request.</p>
+                
+                  
+                    <a href="https://github.com/symkat/docs.markdownsite.com" class="btn btn-primary">visit repo</a>
+                  
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+  
+
+
+    
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+        <p class="mb-md-0 mb-4"></p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item">
+            <a
+              class="text-color d-inline-block p-2"
+              href="https://github.com/symkat/MarkdownSite"
+              aria-label="Github"
+              ><i class="ti-github"></i
+            ></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://docs.markdownsite.com/js/script.min.js"></script>
+
+  </body>
+</html>
