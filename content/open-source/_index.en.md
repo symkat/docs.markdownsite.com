@@ -11,7 +11,7 @@ MarkdownSite is an open-source project.  You can [view & download the source fro
 
 I invite you to setup your own network.
 
-#### Open-Source - Motevation
+#### Open-Source - Motivation
 
 I have always had a deep affinity for this aspect of computer technology.  To express my facination as simply as I can: That one can express an idea, **as information**, and store it in a computer.  That another can have **the information**, retrieved from a computer.  It does not have to be the same computer, and the computers never need to have directly been connected to one another.
 
