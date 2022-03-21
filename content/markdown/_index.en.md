@@ -1,6 +1,6 @@
 ---
 title: "Native Markdown Support"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 icon: "ti-smallcap"
 weight: 3
 description: "Learn about MDS's support for rendering markdown files."

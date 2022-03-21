@@ -1,6 +1,6 @@
 ---
 title: "Host Your Jekyll Website"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 img: "/logo-jekyll.png"
 weight: 1
 description: "Find out how to get a Hugo website up and running on MarkdownSite quickly."
@@ -9,13 +9,19 @@ type : "docs"
 
 [Jekyll](https://jekyllrb.com/) is a popular static website generator.
 
-MarkdownSite fully supports websites made with Jekyll.
+MarkdownSite supports websites made with Jekyll, with one tweak to the configuration file.
 
-Make sure that your website is fully built with `jekyll build -D` in the root of the git repository.
+Make sure that your website is fully built with `jekyll build` in the root of the git repository.
 
 This will ensure that the `_site/` directory has all of the files required to serve the website.
 
-Since `_site` is not the default directory served by MarkdownSite, you have to set the `webroot: _site` in your `.markdownsite.yml`.
+Create a file named `.markdownsite.yml` in the root of the git repository and add the following content.
+
+```
+webroot: _site
+```
+
+This will ensure that MarkdownSite uses the content from `_site` to serve your website.
 
 Commit your repository to your git provider and then go to [MarkdownSite.com](https://markdownsite.com/) and enter the git URL that is used to clone the repository.
 

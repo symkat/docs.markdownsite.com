@@ -1,6 +1,6 @@
 ---
 title: "Open Source"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 icon: "ti-linux"
 description: "MarkdownSite is open source.  You can run the hosting platform yourself if you so choose.  Learn why."
 weight: 5

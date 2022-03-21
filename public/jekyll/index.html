@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Host Your Jekyll Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="generator" content="Hugo 0.95.0" />
+  <meta name="generator" content="Hugo 0.93.1" />
   <meta name="description" content="Host Your Jekyll Website - MarkdownSite Community Docs " />
 
   
@@ -172,17 +172,19 @@
           <h2 class="mb-5" id="title">Host Your Jekyll Website</h2>
           
           <div class="content"><p><a href="https://jekyllrb.com/">Jekyll</a> is a popular static website generator.</p>
-<p>MarkdownSite fully supports websites made with Jekyll.</p>
-<p>Make sure that your website is fully built with <code>jekyll build -D</code> in the root of the git repository.</p>
+<p>MarkdownSite supports websites made with Jekyll, with one tweak to the configuration file.</p>
+<p>Make sure that your website is fully built with <code>jekyll build</code> in the root of the git repository.</p>
 <p>This will ensure that the <code>_site/</code> directory has all of the files required to serve the website.</p>
-<p>Since <code>_site</code> is not the default directory served by MarkdownSite, you have to set the <code>webroot: _site</code> in your <code>.markdownsite.yml</code>.</p>
+<p>Create a file named <code>.markdownsite.yml</code> in the root of the git repository and add the following content.</p>
+<pre tabindex="0"><code>webroot: _site
+</code></pre><p>This will ensure that MarkdownSite uses the content from <code>_site</code> to serve your website.</p>
 <p>Commit your repository to your git provider and then go to <a href="https://markdownsite.com/">MarkdownSite.com</a> and enter the git URL that is used to clone the repository.</p>
 <p>Click <strong>Build My Site</strong> and you will be brought to the status page for your MarkdownSite and it will be rebuilding.</p>
 <p>If you use an <strong>ssh</strong> clone URL, MarkdownSite may need to be given access to your repository.  You can find <a href="https://markdownsite.com/sshkey.txt">the public key here</a>.</p>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">
-            Updated on 29 Dec 2018
+            Updated on 21 Mar 2022
           </p>
           <nav class="pagination mt-3">
             

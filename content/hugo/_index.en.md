@@ -1,6 +1,6 @@
 ---
 title: "Host Your Hugo Website"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 img: "/hugo-logo-wide.svg"
 weight: 1
 description: "Find out how to get a Hugo website up and running on MarkdownSite quickly."
@@ -11,7 +11,7 @@ type : "docs"
 
 MarkdownSite fully supports websites made with Hugo.
 
-Make sure that your website is fully built with `hugo -D` in the root of the git repository.
+Make sure that your website is fully built by running `hugo` in the root of the git repository.
 
 This will ensure that the `public/` directory has all of the files required to serve the website.
 

@@ -1,6 +1,6 @@
 ---
 title: "YAML Config"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 icon: "ti-settings"
 weight: 4
 description: "Like most things, MarkdownSite can be customized with the use of a special YAML file.  Learn about all of the configuration options here."

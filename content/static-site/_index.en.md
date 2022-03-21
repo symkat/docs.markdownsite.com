@@ -1,6 +1,6 @@
 ---
 title: "Host A Static Site"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-03-21T08:00:00+08:00
 icon: "ti-folder"
 weight: 2
 description: "MarkdownSite supports static websites.  Write HTML/CSS by hand, or explore **JAM Stack** tools to build a static website."
